@@ -30,7 +30,6 @@ var lastName = prompt(' Enter your last name:');
 var fullname=firstName+lastName;
 alert(fullname);
 
-// 
 // Bai 6
 var ht = prompt('your name: ');
 alert('hi ' +ht);
