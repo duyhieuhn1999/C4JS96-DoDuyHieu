@@ -168,30 +168,30 @@ console.log(' Một biểu thức Boolean dẫn đến 1 giá trị true hoặc 
 //     alert('you are Obese')
 // }
 // Bai 11 
-// Vẽ Hình Vuông :
-// console.log("11.a");
-// for (var i=1; i <= 4; i++) {
-//     fd(50)
-//     lt(90)
-//   }
+ Vẽ Hình Vuông :
+ console.log("11.a");
+ for (var i=1; i <= 4; i++) {
+     fd(50)
+     lt(90)
+   }
 
-// console.log("11.b");
-// for (var i=1; i < 4; i++) {
-//     fd(50)
-//     rt(120)
-//   }
+ console.log("11.b");
+ for (var i=1; i < 4; i++) {
+     fd(50)
+     rt(120)
+   }
 
-// console.log("11.c");
-// for (var i=1; i <= 5; i++) {
-//     fd(50)
-//     rt(72)
-//   }
+ console.log("11.c");
+ for (var i=1; i <= 5; i++) {
+     fd(50)
+     rt(72)
 
-// console.log("11.d")
-// for (var i=1; i <= 6; i++) {
-//     fd(50)
-//     rt(60)
-//   }
+   }
+ console.log("11.d")
+ for (var i=1; i <= 6; i++) {
+     fd(50)
+     rt(60)
+   }
 // Bai 12 :
 
 
