@@ -16,11 +16,11 @@ console.log('2.2 What results in Boolean ?');
 console.log(' Một biểu thức Boolean dẫn đến 1 giá trị true hoặc false. ');
 
 // Câu 3:
-// console.log('Câu 3 : \n ');
-// console.log('3.a :');
-// for(let i = 0 ; i < 7 ; i++){
-//     console.log(i);
-// }
+ console.log('Câu 3 : \n ');
+ console.log('3.a :');
+ for(let i = 0 ; i < 7 ; i++){
+     console.log(i);
+ }
 
 // console.log('3.b :');
 // let n = prompt(' Enter a number? ');
