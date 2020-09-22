@@ -78,6 +78,21 @@ console.log(Move);
 //     if(n){
 //         switch(n){
 //             case 1
+//             case 3:
+//             case 4:{
+//                 alert("Good luck next time");
+//                 break;
+//             }
+//             case 2:{
+//                 alert('Bravo, you are correct');
+//                 break;
+//             }
+//             default:{
+//                 alert('Invalide choice, the answer must be 1, 2, 3 or 4')
+//                 n = Number(prompt("enter your answer "));
+//                 break;
+//             }
 //         }
+//         break;
 //     }
-// }
+//     
