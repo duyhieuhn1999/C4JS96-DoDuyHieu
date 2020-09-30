@@ -162,3 +162,39 @@ let inventoryByBrand = {
     ],
 }
 console.log(inventoryByBrand);
+//3.4/3.5/3.6/3.7:
+let x = prompt('which brand?');
+if(x == null || x== undefined){
+    alert("???...");
+}
+else{
+    switch(x){
+        case 'hp':
+            let total1=0;
+            let string1 = "\t";
+        for(let i=0; i<inventoryByBrand.hp.length; i++){
+            string1+=inventoryByBrand.hp[i].name;
+            total1 += (inventoryByBrand.hp[i].price)*(inventoryByBrand.hp[i].quantity)*1000;
+        }
+        alert("There are "+inventoryByBrand.hp.length+" generations of 'HP' in inventor:\n"+string1+"\n"+"With total value: "+total1.toLocaleString()+"VND");        
+        break;
+        case 'dell':
+            let total=0;
+            let string = "  ";
+        for(let i=0; i<inventoryByBrand.dell.length; i++){
+            string+=inventoryByBrand.dell[i].name;
+            total += (inventoryByBrand.dell[i].price*inventoryByBrand.dell[i].quantity)*1000;
+        }
+        alert("There are "+inventoryByBrand.dell.length+" generations of 'HP' in inventor:\n"+string+"\n"+'With total value: '+total.toLocaleString()+"VND");        
+        break;
+        case 'asus':
+            let total2=0;
+            let string2 = "  ";
+        for(let i=0; i<inventoryByBrand.asus.length; i++){
+            string2+=inventoryByBrand.asus[i].name;
+            total2 += (inventoryByBrand.asus[i].price*inventoryByBrand.asus[i].quantity);
+        }
+        alert("There are "+inventoryByBrand.asus.length+" generations of 'HP' in inventor:\n"+string2+"\n"+"With total value: "+total2.toLocaleString()+"VND");        
+        break;
+    }
+}
