@@ -1,0 +1,40 @@
+/* cau 1 : */
+/* p {
+    color: red;
+} */
+/* cau 2 : */
+/* #div2 {
+    color: #00ff00;
+} */
+
+/* cau 3 : */
+/* .f24px {
+  font-size: 24px;
+}  */
+
+/* cau 4 :  */ 
+/* div{
+    font-size: 3em;
+    background: wheat
+  }  */
+  /* Cau 5 :  */
+  /* #div2 {
+    color : blue ;
+  } */
+  /* Câu 6  */
+  /* [target]{
+      color: yellow;
+  } */
+    /* Cau 7: */
+  /* ul li{
+      font-weight: bolder;
+  } */
+/* 8 */
+
+.item > span {
+    font-size: 18px;
+}
+
+.item div {
+    font-style: italic;
+}
