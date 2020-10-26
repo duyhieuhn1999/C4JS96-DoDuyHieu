@@ -22,6 +22,7 @@ header {
     font-size: 80px;
     margin: 40px;
     color: #383838;
+    
 }
 
 
@@ -106,9 +107,10 @@ span {
 }
 
 .support img{
-
+    border-radius:50%;
     width: 400px;
-    height: 400px
+    height: 400px;
+    margin-left: 2em    ;
 }
 
 .year p{
@@ -117,3 +119,4 @@ span {
     font-weight: bold;
   
 }
+

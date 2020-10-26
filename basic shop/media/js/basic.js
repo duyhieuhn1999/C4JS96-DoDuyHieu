@@ -1,7 +1,8 @@
 let showNike = document.getElementById('nike');
 let mainPro= document.getElementById("showList");
 let search_Text = document.getElementById("search");
-let search_btn = document.getElementById("search-btn");
+// let search_btn = document.getElementById("search-btn");
+// console.log(search_btn);
 function soProduct(img, name, description, price)
 {
     mainPro.insertAdjacentHTML('beforeEnd', 
@@ -43,24 +44,24 @@ showNike.addEventListener('click',()=>{
 })
 
 // tìm kiếm theo tên
-search_btn.addEventListener('click',()=>{
+// search_btn.addEventListener('click',()=>{
 
-})
+// })
 
-function getInputValue(){
-  // Selecting the input element and get its value 
-  var inputVal = search_Text.value;
-  for(let i = 0 ; i < products.length ;i++){
-    let x = products[i].name.split(' ')
-    for(let j = 0 ; j < x.length ; j++){
-      if(x[j] == inputVal){
-        soProduct(products[i].img[0], products[i].name, products[i].description, products[i].price);
-      }
-    }
-  }
+// function getInputValue(){
+//   // Selecting the input element and get its value 
+//   var inputVal = search_Text.value;
+//   for(let i = 0 ; i < products.length ;i++){
+//     let x = products[i].name.split(' ')
+//     for(let j = 0 ; j < x.length ; j++){
+//       if(x[j] == inputVal){
+//         soProduct(products[i].img[0], products[i].name, products[i].description, products[i].price);
+//       }
+//     }
+//   }
   // Displaying the value
   // alert(inputVal);
-}
+
 // sortby.addEventListener('click',()=>{
 
 
@@ -78,27 +79,31 @@ function getInputValue(){
 const sortPro = document.getElementById("sortbyprice");
 sortPro.addEventListener('change', (e) => {
   let sortType = sortPro.value;
-  console.log(sortType);
-  console.log(typeof (sortType));
+
   if (sortType == "hight_to_low") {
-    product.sort(function (a, b) {
+    products.sort(function (a, b) {
       let keyA = a.price;
       let keyB = b.price;
       if (keyA < keyB) return -1;
       if (keyA > keyB) return 1;
       return 0;
     });
-    showProduct();
+    for(let i=0;i<products.length; i++){
+      soProduct(products[i].img[1], products[i].name, products[i].description, products[i].price )
+      }
+    
   }
   else {
-    product.sort(function (a, b) {
+    products.sort(function (a, b) {
       let keyA = a.price;
       let keyB = b.price;
       if (keyA < keyB) return 1;
       if (keyA > keyB) return -1;
       return 0;
     });
-    showProduct();
+    for(let i=0;i<products.length; i++){
+      soProduct(products[i].img[1], products[i].name, products[i].description, products[i].price )
+      }
 
   }
 });
